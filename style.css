@@ -1,0 +1,171 @@
+body {
+  background-image: -webkit-gradient(linear, left top, right top, from(#7e9794), to(#4a6e97));
+  background-image: linear-gradient(to right, #7e9794, #4a6e97);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.mainContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  vertical-align: auto;
+  /* background-color: #444; */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.submain {
+  margin: 0 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  vertical-align: auto;
+  width: 75%;
+}
+
+.tabContent {
+  border: 1px solid #c8c8c8;
+  border-top: none;
+  background-color: white;
+  height: auto;
+}
+
+.tabPaneContent {
+  padding: 20px 20px;
+}
+
+.tabPaneDiv {
+  background-color: #222;
+}
+
+.tabContent, .nav.nav-tabs {
+  border-radius: 0px 0px 8px 8px;
+}
+
+a {
+  color: white;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover, .nav-tabs > li > a:hover {
+  color: #5c7d70;
+  font-weight: bold;
+}
+
+.nav-tabs li a:hover {
+  background-color: transparent;
+  border: .1px solid transparent;
+  color: white;
+  font-weight: normal;
+}
+
+@media (max-width: 3000px) {
+  .nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:focus, .nav-tabs.nav-justified > .active > a:hover {
+    border: thin solid rgba(123, 149, 149, 0.3);
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:focus, .nav-tabs.nav-justified > .active > a:hover {
+    border: thin solid rgba(123, 149, 149, 0.3);
+  }
+}
+
+.nav-tabs.nav-justified li a {
+  border-bottom: 1px solid #ddd;
+  border-radius: 8px 8px 0 0;
+}
+
+.paneBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #5c7d70;
+  border-radius: 8px;
+  margin: 25px;
+  -webkit-box-shadow: 0px 20px 15px lightgrey;
+          box-shadow: 0px 20px 15px lightgrey;
+  height: 150px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.paneBlock p {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.paneBlock:hover {
+  background-color: white;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border: 0.5px solid #5c7d70;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  color: black;
+}
+
+.paneBlock:hover p.beforeHover {
+  display: none;
+}
+
+.paneBlock:hover ul.afterHover {
+  opacity: 1;
+  height: auto;
+}
+
+.paneBlock:hover + .arrow {
+  visibility: visible;
+  opacity: 1;
+}
+
+.paneBlock ul.afterHover {
+  opacity: 0;
+  height: 0;
+  -webkit-transition: opacity 0.5s linear;
+  transition: opacity 0.5s linear;
+  overflow: hidden;
+  font-weight: bold;
+  margin-left: -15px;
+  text-align: left;
+}
+
+.arrow {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity 0.5s linear, all 0.5s ease;
+  transition: visibility 0s, opacity 0.5s linear, all 0.5s ease;
+  position: absolute;
+  left: 230px;
+  bottom: 90px;
+  color: #5c7d70;
+}
+/*# sourceMappingURL=style.css.map */
